@@ -6,6 +6,20 @@
 
 Generate title for SvarUt
 
+## Usage
+
+```JavaScript
+const generateTitle = require('tfk-generate-svarut-title')
+const data = {
+  category: 'agreement',
+  type: 'elevpc'
+}
+
+console.log(generateTitle(data))
+
+// => 'Avtale fra Telemark fylkeskommune' 
+```
+
 ## License
 
 [MIT](LICENSE)
