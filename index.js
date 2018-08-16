@@ -1,5 +1,6 @@
+const resolveGenerator = require('./lib/resolve-generator')
+
 module.exports = data => {
-  const category = data.category || data.documentType || 'default'
-  const generateTitle = require(`./lib/generators/${category}`)
+  const generateTitle = require(`./lib/generators/${resolveGenerator(data)}`)
   return generateTitle(data)
 }
