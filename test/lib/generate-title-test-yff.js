@@ -20,7 +20,7 @@ test('it returns expected title for yff with kontaktpersonData and no avdeling',
       }
     ]
   })
-  t.deepEqual(title, 'Bekreftelse om utplassering av elev - att: Ulla Norakk', 'yff ok')
+  t.deepEqual(title, 'Bekreftelse om utplassering av elev - ved Ulla Norakk', 'yff ok')
 })
 
 test('it returns expected title for yff with kontaktpersonData and avdeling', t => {
@@ -35,5 +35,5 @@ test('it returns expected title for yff with kontaktpersonData and avdeling', t 
       }
     ]
   })
-  t.deepEqual(title, 'Bekreftelse om utplassering av elev - att: Ulla Norakk - Fellesfiskevaskeriet', 'yff ok')
+  t.deepEqual(title, 'Bekreftelse om utplassering av elev - ved Ulla Norakk - Fellesfiskevaskeriet', 'yff ok')
 })
